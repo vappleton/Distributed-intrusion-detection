@@ -52,7 +52,7 @@ The system currently simulates attacks such as:
 - Suspicious DNS Activity  
 ---
 
-# Example output 
+# Example output
 === INTRUSION ALERT ===  
 Node ID: Node-3  
 Source IP: 83.212.44.19  
@@ -60,7 +60,7 @@ Destination IP: 192.168.1.33
 Attack Type: SQL Injection  
 Severity: HIGH  
 Description: Malicious SQL patterns detected  
-Timestamp: 2026-05-08 22:15:33  
+Timestamp: 2026-05-08 22:15:33
 ========================
 ---
 
@@ -80,7 +80,6 @@ Timestamp: 2026-05-08 22:15:33
 
 4. **Run the Client**  
 ./gradlew runClient or gradle runClient  
-
 The client simulates  and IDS node and sends randomized intrusion alerts to the server. 
 ---
 
