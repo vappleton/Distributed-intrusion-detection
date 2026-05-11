@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package ids;
+
+option java_multiple_files = true;
+option java_package = "com.vappleto.ids";
+
+message LogRequest {
+  string nodeId = 1;
+  string sourceIp = 2;
+  string destinationIp = 3;
+  string attackType = 4;
+  string severity = 5;
+  string description = 6;
+  int64 timestamp = 7;
+}
+
+message LogResponse {
+  bool success =1;
+}
+service LogService {
+  rpc sendLog (LogRequest) returns (LogResponse);
+}
