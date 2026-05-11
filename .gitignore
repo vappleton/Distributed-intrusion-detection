@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Mac
+.DS_Store
+
+# Generated protobuf files
+generated/
+
+# Logs
+*.log
