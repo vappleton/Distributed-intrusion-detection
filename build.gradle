@@ -39,3 +39,12 @@ protobuf {
 test {
     useJUnitPlatform()
 }
+tasks.register('runServer', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.vappleto.ids.ServerMain'
+}
+
+tasks.register('runClient', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.vappleto.ids.ClientMain'
+}
