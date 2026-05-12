@@ -4,7 +4,17 @@ import io.grpc.stub.StreamObserver;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
-
+/**
+ * gRPC service implementation for processing intrusion detection alerts sent by distributed IDS clients.
+ *
+ * This service receives intrusion event information, including attack type, IP addresses, severity levels,
+ * timestamps, and alert descriptions.
+ *
+ * The server processes and logs the intrusion alerts and returns a response indicating whether the event
+ * was successfully received.
+ *
+ * @author Virginia Appleton
+ */
 public class LogServiceImpl extends LogServiceGrpc.LogServiceImplBase {
 
     @Override

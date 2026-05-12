@@ -4,6 +4,18 @@ import java.util.Random;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
+/**
+ * Simulates a distributed IDS node client that generates randomized intrusiond etection alerts and sends them to
+ * a centralized gRPC monitoring server
+ *
+ * The client creates randomized attack events including: source and destination  IP addresses, attack type,
+ * severity level, and descriptive intrusiond etails.
+ *
+ * Communication with the monitoring server is performed using gRPC and Protocol Buffers.
+ *
+ * @Author Virginia Appleton
+ */
+
 public class ClientMain {
 
     private static final Random random = new Random();
@@ -57,13 +69,13 @@ public class ClientMain {
 
 
     }
-    private static String generateInternalIp() {
+    static String generateInternalIp() {
         return "192.168."
                 + (int)(Math.random() * 256)
                 + "."
                 + (int)(Math.random() * 256);
     }
-    private static String generateExternalIp() {
+    static String generateExternalIp() {
         return (20 + (int)(Math.random() * 200)) +
                 "."
                 + (int)(Math.random() * 256) + "."
@@ -75,14 +87,14 @@ public class ClientMain {
         return "Node-" + (random.nextInt(5) + 1);
     }
 
-    private static String randomAttackType() {
+    static String randomAttackType() {
         return attackTypes[random.nextInt(attackTypes.length)];
     }
-    private static String randomSeverityLevel() {
+    static String randomSeverityLevel() {
         return severityLevels[random.nextInt(severityLevels.length)];
     }
 
-    private static String generateDescription(String attackType) {
+    static String generateDescription(String attackType) {
         return switch (attackType) {
 
             case "Port Scan" -> "Multiple ports probed rapidly";

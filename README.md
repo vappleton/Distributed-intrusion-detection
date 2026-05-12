@@ -81,6 +81,10 @@ Timestamp: 2026-05-08 22:15:33
 4. **Run the Client**  
 ./gradlew runClient or gradle runClient  
 The client simulates  and IDS node and sends randomized intrusion alerts to the server. 
+
+
+5. **Running Tests**  
+./gradlew test
 ---
 
 # Protocol buffers
