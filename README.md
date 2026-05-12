@@ -103,6 +103,18 @@ Potential future improvements include:
 - Python-based detection engine integration
 ---
 
+# Screenshots
+
+## Client Output
+![client-task-output.png](Screenshots/client-task-output.png)
+
+## Server Output
+![server-output-1.png](Screenshots/server-output-1.png)
+![server-output-2.png](Screenshots/server-output-2.png)
+![server-output-3.png](Screenshots/server-output-3.png)
+
+___ 
+
 # Author
 
 Virginia Appleton 
