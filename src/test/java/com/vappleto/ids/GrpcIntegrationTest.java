@@ -9,7 +9,15 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Integration tests for validating end-to-end gRPC communication between IDS clients and the monitoring
+ * server.
+ *
+ * These tests verify that intrusion alert requests are successfully transmitted, processed by the server,
+ * and responded to correctly through the gRPC pipeline.
+ *
+ * @author Virginia Appleton
+ */
 public class GrpcIntegrationTest {
     private static Server server;
 

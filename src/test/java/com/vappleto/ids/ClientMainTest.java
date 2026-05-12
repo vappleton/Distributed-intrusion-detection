@@ -2,6 +2,16 @@ package com.vappleto.ids;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+/**
+ * Unit tests for validating IDS client helper methods.
+ *
+ * These tests verify randomized intrusion event
+ * generation including IP address creation,
+ * attack type generation, severity selection,
+ * and intrusion description formatting.
+ *
+ * @author Virginia Appleton
+ */
 
 public class ClientMainTest {
 
